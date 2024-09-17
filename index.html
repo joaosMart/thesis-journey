@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Thesis Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <h1>My Thesis Journey: An Interactive Guide</h1>
+    
+    <div class="chapter">
+        <h2><i class="fas fa-flag-checkered"></i> Chapter 1: Introduction</h2>
+        <ul>
+            <li><a href="#">1.1 Background and Motivation</a></li>
+            <li><a href="#">1.2 Research Questions and Objectives</a></li>
+        </ul>
+        <div class="progress-container">
+            <div class="progress-bar"><div class="progress" id="progress-1"></div></div>
+            <div class="progress-value" id="value-1">0%</div>
+        </div>
+        <input type="range" min="0" max="100" value="0" class="progress-input" id="input-1" oninput="updateProgress(1, this.value)">
+    </div>
+    
+    <div class="chapter">
+        <h2><i class="fas fa-book"></i> Chapter 2: Literature Review</h2>
+        <ul>
+            <li><a href="#">2.1 Theoretical Framework</a></li>
+            <li><a href="#">2.2 Related Work</a></li>
+        </ul>
+        <div class="progress-container">
+            <div class="progress-bar"><div class="progress" id="progress-2"></div></div>
+            <div class="progress-value" id="value-2">0%</div>
+        </div>
+        <input type="range" min="0" max="100" value="0" class="progress-input" id="input-2" oninput="updateProgress(2, this.value)">
+    </div>
+    
+    <!-- Add more chapters as needed -->
+
+    <script src="script.js"></script>
+</body>
+</html>
