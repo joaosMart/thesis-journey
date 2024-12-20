@@ -20,12 +20,13 @@ function loadProgress() {
     });
 }
 
-document.querySelectorAll('.chapter').forEach(chapter => {
-    chapter.addEventListener('mouseenter', () => {
-        chapter.style.backgroundColor = '#fff7ed'; /* Light orange on hover */
+// Add hover effects
+document.querySelectorAll('.chapter, .intro, .setup').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        element.style.backgroundColor = '#fff7ed';
     });
-    chapter.addEventListener('mouseleave', () => {
-        chapter.style.backgroundColor = '#ffffff';
+    element.addEventListener('mouseleave', () => {
+        element.style.backgroundColor = '#ffffff';
     });
 });
 
