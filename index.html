@@ -50,7 +50,12 @@
             <li><a href="https://colab.research.google.com/drive/1eurawye1xkR47e65d-gWjy5nOKNFI3pB">2.4 Detecting & Saving Multiple Fish by Scores</a> - Processing videos with multiple fish occurrences</li>
             <li><a href="https://colab.research.google.com/drive/10lJFlnY7CBnMxB-zaZmlC4mdRGLjshI3">2.5 Final Processing before Classification</a> - Preparation of filtered data for species classification</li>
         </ul>
-        <!-- Progress bar section remains unchanged -->
+        
+        <div class="progress-container">
+            <div class="progress-bar"><div class="progress" id="progress-1"></div></div>
+            <div class="progress-value" id="value-1">0%</div>
+        </div>
+        <input type="range" min="0" max="100" value="0" class="progress-input" id="input-1" oninput="updateProgress(1, this.value)">
     </div>
 
     <!-- Commenting out Anomaly Detection section
